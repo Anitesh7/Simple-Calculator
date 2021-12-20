@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cabin:wght@400;700&family=Cardo:wght@700&family=Heebo:wght@700&family=Lato:ital,wght@0,700;1,400&family=Overlock&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Cardo', serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Overlock', cursive;
+    font-weight:600;
+     
+
+}
+
+body{
+    background-color: #ffeaec;
+}
+
+.container{
+    margin: auto;
+    width: 400px;
+}
+
+.calc-body{
+    margin: 30px auto;
+    height: 647px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px #262626;
+}
+
+.theme-sec{
+    background: #161a1f;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+}
+
+.light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 20px;
+}
+
+.light-mode-button:focus {
+    outline: none; 
+}
+
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+
+.calc-screen{
+    
+    height: 180px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    background: #161a1f;
+    
+}
+.calc-operation{
+    
+    height: 70px;
+    padding: 11px 16px;
+    position: relative;
+    background: #161a1f;
+    margin: 69px auto;
+    display: flex;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 33px;
+    color: white;
+ 
+}
+
+
+
+.button-sec{
+    background: #161a1f;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btn-sec{
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #272a2d;
+
+}
+.inner-btn-sec{
+    padding: 16px 0;
+}
+
+.calc-button-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    position: relative;
+    width: 65px;
+    height: 60px;
+    font-size: 27px;
+    border: 0 solid black;
+    border-radius: 21px;
+    margin: 4px 6px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    box-shadow: 0px 2px 4px black;
+    cursor: pointer;
+    background-color: #272a2d;
+}
+
+
+
+#backspace, #percentage{
+    color: #afdf62;
+}
+
+
+#div, #multi, #sub, #add, #equal{
+    color: #F2C94C;
+}
+
+#clear{
+    color: #dd1515;
+}
+
+
+
+
+button:active {
+    background-color: #35383b;
+    transform: translateY(3px);
+    
+}
+
+
+
+body[light-mode="light"] {
+    background-color: #ffeaec;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #515256;
+    color: #141516;
+}
+
+body[light-mode="light"] .light-mode-button span:nth-child(2) {
+    left: 60px;
+    background-color: #141516;
+}
+
+
+body[light-mode="light"] .calc-screen {
+    background-color: #fff;
+}
+body[light-mode="light"] .button-sec {
+    background-color: rgb(255, 255, 255);
+}
+body[light-mode="light"] .btn-sec {
+    background-color: rgb(248 248 248);
+}
+body[light-mode="light"] .theme-sec {
+    background-color: #fff;
+}
+
+body[light-mode="light"] .calc-body {
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 12px #a5a5a5;
+}
+
+body[light-mode="light"] .calc-operation {
+    color: #000000;
+    background-color: #fff;
+}
+
+body[light-mode="light"] button {
+    color: #080808;
+    box-shadow: 0px 2px 4px rgb(165, 165, 165);
+    background-color: #f8f8f8;
+}
+
+
+
+body[light-mode="light"] #backspace, #percentage {
+    color: #83d302;
+}
+
+body[light-mode="light"] #div, #multi, #sub, #add, #equal {
+    color: #ffc000;
+}
+
+
+
+button:hover {
+    background-color: #33353a;
+}
+
+
+body[light-mode="light"] button:hover{
+    background-color: rgb(230, 230, 230);
+}
